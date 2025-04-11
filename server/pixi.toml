@@ -1,0 +1,23 @@
+[workspace]
+authors = ["❖Mʀ᭄Anshᴿᵒˢʰᵃⁿ࿐ <ianshroshan@gmail.com>"]
+channels = ["conda-forge"]
+name = "server"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+channels = "pytorch"
+
+[dependencies]
+fastapi = ">=0.115.12,<0.116"
+uvicorn = ">=0.34.0,<0.35"
+sqlalchemy = ">=2.0.40,<3"
+psycopg2-binary = ">=2.9.9,<3"
+python-multipart = ">=0.0.20,<0.0.21"
+
+[feature.dev.dependencies]
+black = "*"
+ruff = "*"
+mypy = "*"
+pytest = "*"
+httpx = "*"
